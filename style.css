@@ -1,0 +1,191 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+header{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #222;
+}
+
+.icon{
+    cursor: pointer;
+}
+
+.store-name{
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff
+ }
+ 
+ /* navbar*/
+
+ nav{
+    height: 60px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    background: #DC4C64;
+ }
+
+nav  ul{
+    width: 60%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+
+ nav ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    transition: .3s;
+ }
+
+ nav ul li:hover a{
+    color: #131A22;
+ }
+
+/* main */
+
+.main{
+    height: auto;
+    width: 100%;
+    display: flex;
+}
+
+.products{
+    width: 70%;
+    padding: 20px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 5px;
+}
+
+.category{
+    width: 30%;
+    padding: 20px; 
+}
+
+/* item */
+
+.products h1{
+    position: absolute;
+    top: 150px;
+    color: #9FA6B2;
+}
+
+.item{
+    height: 185px;
+    width: 260px;
+    background: #fff;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}
+.item .image{
+    height: 150px;
+    width: 250px;
+    overflow: hidden;
+    
+}
+
+.image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 2px;
+    transition: .5s;
+}
+
+.image img:hover{
+    transform: scale(1.5);
+}
+
+.item div:last-child{
+    display: flex;
+    justify-content: space-between;
+}
+
+.item div:last-child{
+    padding: 5px;
+}
+
+.item-name{
+    color: #007bff;
+}
+
+.item-price{
+    color: #14A44D;
+}
+
+/* category */
+
+.category ul li{
+    list-style-type: none;
+    padding: 15px;
+}
+.category ul li a{
+    text-decoration: none;
+    margin-left: 5px;
+    color: #222;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background: #37475A;
+    color: white;
+}
+
+footer div{
+    margin-top: 10px;
+}
+
+footer div ul{
+    margin-top: 5px;
+}
+
+footer div ul li{
+    list-style-type: none;
+    padding: 5px;
+}
+
+footer div ul li a{
+    text-decoration: none;
+    color: white;
+    transition: .2s;
+}
+
+footer div ul li:hover a{
+    color: #131A22;
+}
+
+.copy-right{
+    height: 80px;
+    padding: 20px;
+    text-align: center;
+    background: #131A22;
+    color: white;
+}
+
+.active a{
+    color:#131A22;
+}
